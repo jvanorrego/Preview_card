@@ -3,57 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!--this section build the connection to the external fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <!--
 #Preview for a perfume. 
 #Div tree for the organization of the sections of the website. 
 -->
 
-<div class="frame"> <!-- This is the parent div-->
-  <div class="image"> <!-- This div contain the image of the product.-->
-    <img src="images/image-product-desktop.jpg" alt="Perfume" id="perfume_img">
+
+<main role="main">
+  <div class="frame"> <!-- This is the parent div-->
+    <div class="image"> <!-- This div contain the image of the product.-->
+      <img src="images/image-product-desktop.jpg" alt="Perfume" id="perfume_img">
+    </div>
+
+    <div class="content"> <!--This div contain the other div for the content -->
+      <div class="type_product">
+        <h2>Preview</h2>
+      </div>
+      <div class="title_product">
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <div class="description_product">
+        <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+      </div>
+      <div class="prices">
+          <div class="price_now">
+            <p>$149.99</p>
+          </div>
+          <div class="price_old">
+            <p>$169.99</p>
+          </div>
+      </div>
+      <div class="buy_button">
+        <button class="buy_button" type="button">Add to Cart</button>
+      </div>
+    </div>
   </div>
+</main>
 
-  <div class="content"> <!--This div contain the other div for the content -->
-    <div class="type_product">
-      <h2>Preview</h2>
-    </div>
-    <div class="title_product">
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-    </div>
-    <div class="description_product">
-      <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.</p>
-    </div>
-    <div class="prices">
-        <div class="price_now">
-          <p>$149.99</p>
-        </div>
-        <div class="price_old">
-          <p>$169.99</p>
-        </div>
-    </div>
-    <div class="buy_button">
-      <button class="buy_button" type="button">Add to Cart</button>
-    </div>
-    
-  </div>
-
-</div>
-
+<footer role="contentinfo">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Alejo2304/Preview_card">Laor</a>.
   </div>
+</footer>
 </body>
 </html>
