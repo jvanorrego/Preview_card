@@ -26,12 +26,15 @@
 <main role="main">
   <div class="frame"> <!-- This is the parent div-->
     <div class="image"> <!-- This div contain the image of the product.-->
-      <img src="images/image-product-desktop.jpg" alt="Perfume" id="perfume_img">
+      <picture>
+        <source media="(min-width:375px)" srcset="images/image-product-desktop.jpg">
+        <img src="images/image-product-mobile.jpg" alt="photo of Gabrielle Essence Eau De Parfum">
+      </picture>
     </div>
 
     <div class="content"> <!--This div contain the other div for the content -->
       <div class="type_product">
-        <h2>Preview</h2>
+        <h2>Perfume</h2>
       </div>
       <div class="title_product">
         <h1>Gabrielle Essence Eau De Parfum</h1>

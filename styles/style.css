@@ -2,6 +2,69 @@ body{
     background-color: hsl(30, 38%, 92%);
 }
 
+.frame{
+    display: flex;
+    border-radius: 3%;
+    overflow:auto;
+    flex-direction: column;
+}
+@media screen and (min-width: 375px) {
+    .frame{
+        display: flex;
+        border-radius: 3%;
+        overflow: auto;
+        flex-direction: row;
+    }
+}
+
+.image{
+    flex:1;
+}
+
+.image img{
+    width: 100%;
+    height:100%;
+}
+
+.content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    background-color:hsl(0, 0%, 100%);
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices p{
+    color: hsl(158, 36%, 37%);
+}
+
+.price_now{
+    flex:1;
+}
+.price_old{
+    flex:1;
+}
+.buy_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.buy_button button{
+    flex:1;
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
