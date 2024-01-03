@@ -21,50 +21,60 @@
 #Preview for a perfume. 
 #Div tree for the organization of the sections of the website. 
 -->
+<body>
 
 
-<main role="main">
-  <div class="frame"> <!-- This is the parent div-->
-    <div class="image"> <!-- This div contain the image of the product.-->
-      <picture>
-        <source media="(min-width:375px)" srcset="images/image-product-desktop.jpg">
-        <img src="images/image-product-mobile.jpg" alt="photo of Gabrielle Essence Eau De Parfum">
-      </picture>
+    <div class="box">
+        
+        <div class="image">
+            
+            <picture>
+                <source media="(min-width:450px)" srcset="images/image-product-desktop.jpg">
+                <img src="images/image-product-mobile.jpg" alt="photo of Gabrielle Essence Eau De Parfum">
+            </picture>
+            
+        </div>
+
+        <div class="content">
+
+            <div id="type_product">
+                <h2>PERFUME</h2>
+            </div>
+
+            <div id="title_product">
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+            </div>
+
+            <div id="description_product">
+                <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.</p>
+            </div>
+
+            <div class="prices">
+
+                <div id="price_now">
+                      <p>$149.99</p>
+                </div>
+                    
+                <div id="price_old">
+                    <p>$169.99</p>
+                </div>
+
+            </div>  
+
+            <div class="buy_button">
+
+                <button class="buy_button" type="button">
+                    Add to Cart 
+                </button>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="content"> <!--This div contain the other div for the content -->
-      <div class="type_product">
-        <h2>PERFUME</h2>
-      </div>
-      <div class="title_product">
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-      </div>
-      <div class="description_product">
-        <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.</p>
-      </div>
-      <div class="prices">
-          <div class="price_now">
-            <p>$149.99</p>
-          </div>
-          <div class="price_old">
-            <p>$169.99</p>
-          </div>
-      </div>
-      <div class="buy_button">
-        <button class="buy_button" type="button">
-          Add to Cart 
-        </button>
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer role="contentinfo">
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Alejo2304/Preview_card">Laor</a>.
-  </div>
-</footer>
 </body>
 </html>
+
+
