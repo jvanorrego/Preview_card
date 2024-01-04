@@ -14,7 +14,7 @@ body{
     display: flex;
 
     max-width: 100vh;
-    max-height: 85vh;
+    max-height: 90vh;
 
     border-radius: 3%;
 }
@@ -42,14 +42,12 @@ body{
     background-color:hsl(0, 0%, 100%);
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
-
-    
 }
 
 #type_product h2{
     flex: 1;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6vmin;
+    font-size: 0.65em;
     letter-spacing: 1vh;
     color: hsl(228, 12%, 48%);
 
@@ -61,7 +59,7 @@ body{
 #title_product h1{
     flex:1;
     font-family: 'Fraunces', serif;
-    font-size: 5.1vmin;
+    font-size: 2.3em;
 
     padding-inline: 10%;
 }
@@ -69,7 +67,7 @@ body{
 #description_product{
     flex: 1;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.3vmin;
+    font-size: 0.9em;
     line-height: 1.7;
     color: hsl(228, 12%, 48%);
 
@@ -83,18 +81,17 @@ body{
     align-items: center;
 
     font-family: 'Fraunces', serif;
-
     padding-inline: 10%;
 }
 
 #price_now p{
     flex:1;
-    font-size: 4.5vmin;
+    font-size: 1.5em;
     color: hsl(158, 36%, 37%);
 }
 #price_old p{
     flex:1;
-    font-size: 1.5vmin;
+    font-size: 0.6em;
     padding-left: 3vmin;
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
@@ -148,21 +145,55 @@ body{
 
     .box{
         display: flex;
-        justify-content:center;
-        align-items: center;
-
-        height: 95%;
-
-        margin: auto;
-
         flex-direction: column;
+
+        justify-content:flex-start;
+
+        height: 85%;
+
+        margin-inline: 3vmin ;
+        margin-block: 5vmin;
+
+        
+    }
+
+    .content{
+        
+        height: 90%;
+
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 3%;
     }
 
     .image{
-        max-height: 33%;
+        min-height: 38%;
+        border-bottom-left-radius: 0%;
+
     }
     .image img{
+
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 3%;
         max-width: 100%;
     }
 
+    #type_product{
+        font-size: 1.5em;
     }
+
+    #title_product {
+        font-size: 0.9em;
+    }
+
+    #description_product{
+        font-size: 0.9em;
+    }
+
+    #price_now {
+        font-size: 1.5em;
+    }
+
+    #price_old {
+        font-size: 2em;
+    }
+}
