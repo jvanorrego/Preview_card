@@ -59,7 +59,9 @@ body{
 #title_product h1{
     flex:1;
     font-family: 'Fraunces', serif;
-    font-size: 2.3em;
+    font-size: 2.1em;
+
+    line-height: 1.9rem;
 
     padding-inline: 10%;
 }
@@ -67,7 +69,7 @@ body{
 #description_product{
     flex: 1;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.7;
     color: hsl(228, 12%, 48%);
 
